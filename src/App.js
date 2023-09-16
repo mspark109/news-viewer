@@ -1,18 +1,18 @@
 import {
   Route,
   Routes,
-  HashRouter,
+  BrowserRouter,
 } from '../node_modules/react-router-dom/dist/index';
 import NewsPage from './pages/NewsPage';
 
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<NewsPage />} />
         <Route path="/:category?" element={<NewsPage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
