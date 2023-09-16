@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "/news-viewer/",
+  "homepage": "https://mspark109.github.io/news-viewer",
   "eslintConfig": {
     "extends": [
       "react-app",
