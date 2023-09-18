@@ -7,9 +7,8 @@ import NewsPage from './pages/NewsPage';
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.basename}>
       <Routes>
-        <Route path="/" element={<NewsPage />} />
         <Route path="/:category?" element={<NewsPage />} />
       </Routes>
     </BrowserRouter>
